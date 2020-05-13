@@ -1,1 +1,2 @@
-
+This code is to train model to extract information from the twitter sentence
+data like words which provide higher weight to the sentiment to the sentence
