@@ -1,0 +1,5 @@
+loss: 0.0527 
+accuracy: 0.9871
+new_model
+loss: 0.0453 
+accuracy: 0.9892
