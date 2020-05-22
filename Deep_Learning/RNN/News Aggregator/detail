@@ -1,3 +1,15 @@
 This is a Kaggle competition challenge where we were challenged to make a model which can segregate the news in to 4 Categories using News Headline and content 
 and extract the keywords which leads to the categorization (important words to get extracted).
 I have uploaded the Trained model and datasets
+I have uploaded pre trained model as rar file.
+
+Pre processing:
+1) removed stopwords
+2) removed non word character
+3) used Lematizer
+4) wrapped up more than 2 spaces as one
+5) removed one letter word
+
+Model used to detect:
+
+
