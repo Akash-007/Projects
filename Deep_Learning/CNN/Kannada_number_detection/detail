@@ -1,0 +1,53 @@
+This is a kaggle competetion model where the main objective was to predict the number given the pixel values of the image.
+the model is trained on a large dataset of 1,60000 rows.
+Details of model is below
+
+cleaning:
+I haved scaled the pixel by dividing it with maximum value of 255
+for CNN model I have reshaped the data you can see the model to get more information.
+
+CNN Model:
+=================================================================
+conv2d (Conv2D)              (None, 26, 26, 128)       1280      
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 13, 13, 128)       0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 12, 12, 64)        32832     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 6, 6, 64)          0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 5, 5, 20)          5140      
+_________________________________________________________________
+flatten (Flatten)            (None, 500)               0         
+_________________________________________________________________
+dense (Dense)                (None, 50)                25050     
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                510       
+=================================================================
+Total params: 64,812
+Trainable params: 64,812
+Non-trainable params: 0
+_________________________________________________________________
+
+loss = 0.0285 accuracy = 0.9914
+
+
+Deep Neural Network:
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 300)               235500    
+_________________________________________________________________
+dropout (Dropout)            (None, 300)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 100)               30100     
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                1010      
+=================================================================
+Total params: 266,610
+Trainable params: 266,610
+Non-trainable params: 0
+________________________
+
+
+accuracy = 98%
+loss = 0.0466
