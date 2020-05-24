@@ -1,0 +1,2 @@
+This is an approach to build your own word embeddings( mean getting the meaning of the word)
+I have used Gensim model to train embedding on amazon corpus
