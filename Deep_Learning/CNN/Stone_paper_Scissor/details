@@ -1,0 +1,31 @@
+Hi All,
+
+This is CLassification model using CNN with 99.60% accuracy.
+the data was of 220 mb, so leaving the link to download the data.
+https://www.kaggle.com/frtgnn/rock-paper-scissor
+
+I have used CNN architeture to train the model, summary of the model is listed below.
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d (Conv2D)              (None, 26, 26, 64)        640       
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 24, 24, 32)        18464     
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 23, 23, 32)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 16928)             0         
+_________________________________________________________________
+dense (Dense)                (None, 128)               2166912   
+_________________________________________________________________
+dropout (Dropout)            (None, 128)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 3)                 387       
+=================================================================
+Total params: 2,186,403
+Trainable params: 2,186,403
+Non-trainable params: 0
+_________________________________________________________________
+None
